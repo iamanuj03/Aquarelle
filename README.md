@@ -2,12 +2,17 @@
 THIS IS A .NET WEB APPLICATION
 THIS APP CONSISTS OF A LOGIN PAGE AND A USER PAGE
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------  
 #LOGIN PAGE
-  TO SUCCESSFULLY LOGIN IN THE APPLICATION:
+
+TO SUCCESSFULLY LOGIN IN THE APPLICATION:
     1. MAKE SURE YOU GO TO THE "PATHS.cs" CLASS AND CHANGE THE "pathToChange" VARIABLE TO THE LOCATION WHERE THIS PROJECT IS SAVED IN YOUR COMPUTER
     2. YOU CAN USE THE USERNAME "EMP01" AND PASSWORD "1234" OR GO TO THE DATA/USERS/users.txt FILE FOR MORE LOGIN AND PASSWORDS
     
+-------------------------------------------------------------------------------------------------------------------------------------------------------    
+    
 #USER PAGE
+
   1. ONCE SUCCESSFULLY LOGGED IN, YOU WILL HAVE ACCESS TO THE FILES FOUND IN THE FOLDER OF THE USER AS WHOM YOU HAVE LOGGED IN.
   
   2. IF THE FILES FOLDER IS EMPTY, THE USER PAGE WILL SAY "NO FILES FOUND!"
