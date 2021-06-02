@@ -4,7 +4,7 @@ THIS APP REQUIRES VISUAL STUDIO AND AN INTERNET CONNECTION TO RUN
 THIS APP CONSISTS OF TWO MAIN PAGES
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------  
-#LOGIN PAGE
+#LOGIN PAGE ( SET AS STARTUP PAGE )
 
 TO SUCCESSFULLY LOGIN IN THE APPLICATION:
     1. MAKE SURE YOU GO TO THE "PATHS.cs" CLASS AND CHANGE THE "pathToChange" VARIABLE TO THE LOCATION WHERE THIS PROJECT IS SAVED IN YOUR COMPUTER
