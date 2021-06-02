@@ -1,6 +1,7 @@
 # Aquarelle
 THIS IS A .NET WEB APPLICATION
-THIS APP CONSISTS OF A LOGIN PAGE AND A USER PAGE
+THIS APP REQUIRES VISUAL STUDIO AND AN INTERNET CONNECTION TO RUN
+THIS APP CONSISTS OF TWO MAIN PAGES
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------  
 #LOGIN PAGE
