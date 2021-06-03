@@ -7,7 +7,9 @@ THIS APP CONSISTS OF TWO MAIN PAGES:
 #LOGIN PAGE ( SET AS STARTUP PAGE )
 
 TO SUCCESSFULLY LOGIN IN THE APPLICATION:
+
     1. MAKE SURE YOU GO TO THE "PATHS.cs" CLASS AND CHANGE THE "pathToChange" VARIABLE TO THE LOCATION WHERE THIS PROJECT IS SAVED IN YOUR COMPUTER
+    
     2. YOU CAN USE THE USERNAME "EMP01" AND PASSWORD "1234" OR GO TO THE DATA/USERS/users.txt FILE FOR MORE LOGIN AND PASSWORDS
     
 -------------------------------------------------------------------------------------------------------------------------------------------------------    
