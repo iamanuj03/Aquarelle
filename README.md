@@ -4,7 +4,7 @@ THIS APP REQUIRES VISUAL STUDIO (2017+) AND AN INTERNET CONNECTION TO RUN.
 THIS APP CONSISTS OF TWO MAIN PAGES:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------  
-#LOGIN PAGE ( SET AS STARTUP PAGE )
+#LOGIN PAGE ( RIGHT-CLICK ON loginForm.aspx AND SET IT AS STARTUP PAGE )
 
 TO SUCCESSFULLY LOGIN IN THE APPLICATION:
 
