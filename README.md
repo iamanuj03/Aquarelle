@@ -1,7 +1,7 @@
 # Aquarelle
-THIS IS A .NET WEB APPLICATION
-THIS APP REQUIRES VISUAL STUDIO AND AN INTERNET CONNECTION TO RUN
-THIS APP CONSISTS OF TWO MAIN PAGES
+THIS IS A .NET WEB APPLICATION.
+THIS APP REQUIRES VISUAL STUDIO (2017+) AND AN INTERNET CONNECTION TO RUN.
+THIS APP CONSISTS OF TWO MAIN PAGES:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------  
 #LOGIN PAGE ( SET AS STARTUP PAGE )
