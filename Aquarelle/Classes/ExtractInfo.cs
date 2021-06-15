@@ -55,7 +55,7 @@ namespace Aquarelle.Classes
                             if (currentLine.Contains("Family name:"))
                                 lstExtractedInfo.Add(currentLine);
 
-                            if(currentLine == "Account Number Account Creation Date ")
+                            if(currentLine.Contains("Account Number"))
                             {
                                 lstExtractedInfo.Add(Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(lines[j + 1])));
                                 lstExtractedInfo.Add(Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(lines[j + 2])));
@@ -64,10 +64,12 @@ namespace Aquarelle.Classes
                         }
                     }
 
-                    string firstPattern = "", secondPattern = "", thirdPattern = "";
+                    string firstPattern = "", 
+                           secondPattern = "", 
+                           thirdPattern = "";
 
-                    string[] accountOneDetails = lstExtractedInfo.ElementAt<string>(lstExtractedInfo.Count - 2).Split(' ');
-                    string[] accountTwoDetails = lstExtractedInfo.ElementAt<string>(lstExtractedInfo.Count - 1).Split(' ');
+                    IEnumerable<string> accountOneDetails = lstExtractedInfo.ElementAt<string>(lstExtractedInfo.Count - 2).Split(' ').Where(x => x != "");
+                    IEnumerable<string> accountTwoDetails = lstExtractedInfo.ElementAt<string>(lstExtractedInfo.Count - 1).Split(' ').Where(x => x != "");
 
                     string pdfName = lstExtractedInfo.Find(extractedInfo => extractedInfo.Contains("FileName"));
                     string date = lstExtractedInfo.Find(extractedInfo => extractedInfo.Contains("Date"));
@@ -78,8 +80,8 @@ namespace Aquarelle.Classes
                     firstPattern += date.Substring(date.LastIndexOf(":") + 1) + " |";
                     firstPattern += custNumber.Substring(custNumber.LastIndexOf(":") + 1) + " |";
                     firstPattern += familyName.Substring(familyName.LastIndexOf(":") + 1);
-                    secondPattern = accountOneDetails[0] + " | " + accountOneDetails[1];
-                    thirdPattern =  accountTwoDetails[0] + " | " + accountTwoDetails[1];
+                    secondPattern = accountOneDetails.ElementAt(0) + " | " + accountOneDetails.ElementAt(1);
+                    thirdPattern = accountTwoDetails.ElementAt(0) + " | " + accountTwoDetails.ElementAt(1);
 
                     string[] formattedExtractedInfo = { firstPattern, secondPattern, thirdPattern };
                     SaveExtractedInfo(formattedExtractedInfo);
